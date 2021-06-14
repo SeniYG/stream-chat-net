@@ -181,7 +181,7 @@ await chan.AddModerators(new string[] { june.ID });
 await chan.DemoteModerators(new string[] { june.ID });
 
 //add a ban with a timeout
-await chan.BanUser(june.ID, "Being a big jerk", 4);
+await chan.BanUser(june.ID, bob.ID, "Being a big jerk", 4);
 
 //removing a ban
 await chan.UnbanUser(june.ID);
